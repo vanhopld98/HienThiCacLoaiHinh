@@ -41,19 +41,47 @@ public class Main {
                         }
                     }
                     System.out.println("");
+                    for (int i = height; i >= 1; i--) {
+                        System.out.println("");
+                        for (int j = 1; j <= i; j++) {
+                            System.out.print("* ");
+                        }
+                    }
+                    System.out.println("");
+                    for (int i = 1; i <= height; i++) {
+                        for (int j = height; j >= i; j--) {
+                            System.out.print("  ");
+                        }
+                        for (int k = 1; k <= i; k++) {
+                            System.out.print("* ");
+                        }
+                        System.out.println("");
+                    }
+                    System.out.println("");
+                    for (int i = 1; i <= height ; i++) {
+                        for (int j = 1; j <= i ; j++) {
+                            System.out.print("  ");
+                        }
+                        for (int k = height; k >= i ; k--) {
+                            System.out.print("* ");
+                        }
+                        System.out.println("");
+                    }
                     break;
                 }
                 case 3: {
                     System.out.println("3. Print isosceles triangle");
                     System.out.println("Enter height");
                     height = scanner.nextInt();
-                    for (int i = height; i >= 1; i--) {
-                        System.out.println("");
-                        for (int j = 1; j <= i; j++) {
-                            System.out.print("*");
+                    for (int i = 1; i <= height; i++) {
+                        for (int j = height; j >= i; j--) {
+                            System.out.print(" ");
                         }
+                        for (int k = 1; k <= i; k++) {
+                            System.out.print("* ");
+                        }
+                        System.out.println("");
                     }
-                    System.out.println("");
                     break;
                 }
                 case 4:
